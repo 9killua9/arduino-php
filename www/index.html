@@ -46,7 +46,7 @@
 						}
 					}
 				
-				x.open ("GET", "http://localhost/%23Arduino/sketch/arduino_php_arduino/php-arduino/ws-client/switch-set.php?status=" + (!switchStatus) + "&r=" + Math.random(), true);
+				x.open ("GET", "http://192.168.0.189/%23Arduino/sketch/arduino_php_arduino/php-arduino/ws-client/switch-set.php?status=" + (!switchStatus) + "&r=" + Math.random(), true);
 				
 				x.send (null);
 				
@@ -82,7 +82,7 @@
 							}
 						}
 					
-					x.open ("GET", "http://localhost/%23Arduino/sketch/arduino_php_arduino/php-arduino/ws-client/switch-get.php?r=" + Math.random(), true);
+					x.open ("GET", "http://192.168.0.189/%23Arduino/sketch/arduino_php_arduino/php-arduino/ws-client/switch-get.php?r=" + Math.random(), true);
 					
 					x.send (null);
 					
